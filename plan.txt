@@ -1,0 +1,14 @@
+Routes:
+
+  Users
+  - Sign up user
+  - Login in user 
+  
+  Riffs
+  - Upload riff 
+  - Rate riff 
+  - Favorite riff 
+  - Delete riff
+
+
+
