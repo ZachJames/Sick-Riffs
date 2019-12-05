@@ -1,20 +1,17 @@
 import React from 'react'
 
-import Card from '../components/Card'
+import RiffCard from '../components/RiffCard'
 
 const mockRiffs = [
-  { user: 'Zach' },
-  { user: 'Bill23' },
-  { user: 'James1' },
-  { user: 'SickGuitarxx' },
-  { user: 'Anon1' },
+  { user: 'Zachincool', title: 'A little ditty', time: '0:28', stars: 197 },
+  {
+    user: 'Daveyxx',
+    title: 'Something i wrote yesterday',
+    time: '0:24',
+    stars: 5,
+  },
 ]
 
-const Home = () =>
-  mockRiffs.map(riff => (
-    <Card>
-      <span>{riff.user}</span>
-    </Card>
-  ))
+const Home = () => mockRiffs.map(riff => <RiffCard riff={riff} />)
 
 export default Home

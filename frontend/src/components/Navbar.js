@@ -11,6 +11,7 @@ const Navbar = styled.nav`
   background-color: black;
   overflow-x: hidden;
   padding-top: 20px;
+  border-top: 8px solid #ffc46c;
 `
 
 const NavLink = styled.a`
@@ -21,7 +22,7 @@ const NavLink = styled.a`
   color: #fff;
   display: block;
   &:hover {
-    background-color: #fff;
+    background-color: #ffc46c;
     color: black;
     cursor: pointer;
   }
