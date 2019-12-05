@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Navbar = styled.nav`
   height: 100vh;
@@ -14,7 +15,7 @@ const Navbar = styled.nav`
   border-top: 8px solid #ffc46c;
 `
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   background-color: black;
   padding: 10px 23px;
   text-decoration: none;
@@ -32,7 +33,6 @@ export default () => (
   <Navbar>
     <NavLink>Home</NavLink>
     <NavLink>Top Riffs</NavLink>
-    <NavLink>+ Upload Riff</NavLink>
-    <NavLink>Your Account</NavLink>
+    <NavLink to="/signup">Sign Up</NavLink>
   </Navbar>
 )
