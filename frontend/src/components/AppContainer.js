@@ -3,6 +3,9 @@ import styled from 'styled-components'
 
 const AppContainer = styled.main`
   margin-left: 180px;
+  @media (max-width: 600px) {
+    margin-left: 0;
+  }
 `
 
 const Wrapper = styled.div`

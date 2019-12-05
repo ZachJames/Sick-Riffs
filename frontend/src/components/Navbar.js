@@ -9,22 +9,24 @@ const Navbar = styled.nav`
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #ffce42;
   overflow-x: hidden;
   padding-top: 20px;
-  border-top: 8px solid #ffc46c;
+  border-right: 1px solid #adadad;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
 
 const NavLink = styled(Link)`
-  background-color: black;
+  background-color: transparent;
   padding: 10px 23px;
   text-decoration: none;
   font-size: 1.2rem;
-  color: #fff;
+  color: black;
   display: block;
   &:hover {
-    background-color: #ffc46c;
-    color: black;
+    background-color: #9ec24f;
     cursor: pointer;
   }
 `
